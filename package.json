@@ -1,19 +1,28 @@
 {
-  "name": "notification-service",
-  "version": "1.0.0",
-  "description": "Notification Service to send email notifications.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Rupam Kerketta",
-  "license": "ISC",
-  "dependencies": {
-    "config": "^3.3.7",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "mongoose": "^6.3.4",
-    "node-cron": "^3.0.0",
-    "nodemailer": "^6.7.5"
-  }
+	"name": "notification-service",
+	"version": "1.0.0",
+	"description": "Notification Service to send email notifications.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon server.js"
+	},
+	"author": "Rupam Kerketta",
+	"license": "ISC",
+	"dependencies": {
+		"config": "^3.3.7",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"express-async-errors": "^3.1.1",
+		"http-status-codes": "^2.2.0",
+		"mongoose": "^6.3.4",
+		"node-cron": "^3.0.0",
+		"nodemailer": "^6.7.5",
+		"response-time": "^2.3.2",
+		"validator": "^13.7.0"
+	},
+	"devDependencies": {
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.16"
+	}
 }
