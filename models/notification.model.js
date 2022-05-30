@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const constants = require('../utils/constants')
 
-const notificationSchema = mongoose.Schema({
+const notificationSchema = new mongoose.Schema({
 	subject: {
 		type: String,
 		required: true
