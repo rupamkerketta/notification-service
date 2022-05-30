@@ -8,6 +8,7 @@ const dbConnect = require('./db')
 const startServer = () => {
 	// Start the express server
 	app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`))
+	require('./crons/cron')
 }
 
 dbConnect(startServer)
