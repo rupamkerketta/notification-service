@@ -3,7 +3,7 @@ const Notification = require('../models/notification.model')
 const constants = require('../utils/constants')
 const emailTransporter = require('../notifier/email-service')
 
-cron.schedule('*/2 * * * * *', async () => {
+cron.schedule('*/30 * * * * *', async () => {
 	// I need to send emails here
 	// 1. Get the list of all the notifications to be sent
 	// 2. Send email for each notifications
